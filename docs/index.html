@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/e019c793cb.js" crossorigin="anonymous"></script>
+    <style>
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+        
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 15rem;
+        margin-left: 45%;
+        /* Prevent the scrolly from overlapping the ai2html */
+        z-index: 1;
+
+      }
+
+
+      h1,.subhead {
+            max-width: 800px !important;
+            /* padding-left: 30px; */
+            font-family: 'Georgia', Times, serif;
+
+          
+          color: #000000; 
+        }
+
+        a {
+          color: #000000;
+          text-decoration: underline;
+          font-family: 'Georgia', Times, serif;
+        }
+
+      .subhead {
+        font-weight: bold;
+        font-size: 20px; 
+	      padding-left: 20px;        }
+
+      h1{
+        color: #000000;
+        padding-left: 20px;
+        padding-top: 30px;
+      }
+
+      body p {
+
+        padding-left: 20px;
+        padding-bottom: 30px;
+        color: #000000;
+        font-family: 'Georgia', Times, serif;
+      }
+
+      .ai2html-container {
+        float: left;
+        /* width: 40%; */
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 25rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      .hidden { visibility: hidden; }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .anti-highlight {
+        
+        opacity: 0.2;
+      }
+    </style>
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+	
+  </head>
+
+  <body>
+
+    <script>
+        function createGrid() {
+          // Create a 3x3 grid using a two-dimensional array
+          const grid = [
+            ['images/nark2001-g1-g2.jpeg', 'images/nark2002-g1-g2.jpg', 'images/nark2003-g1.jpg', 'images/nark2004-g1-g2.jpg'],
+            ['images/nark2005-g1.jpg', 'images/nark2007-g1.jpg', 'images/nark2008.jpg', 'images/nark2009-g1-g2.jpg'],
+            ['images/nark20010-g1-g2.jpg', 'images/nark20011-g1-g2.jpg', 'images/nark20012-g1-g2.jpg', 'images/nark20013.jpg'],
+            ['images/nark20014-g1.jpg', 'images/nark20015.jpg', 'images/nark20019.jpg', 'images/nark20020-g1.jpg'],
+            ['images/nark20021.jpg', 'images/nark20023-g1-g2-k2.jpg', 'images/nark20030-g1-g2.jpg', 'images/nark20032-g1-g2.jpg'],
+
+          ];
+  
+          // Loop through the rows of the grid and create a table element for each row
+          const table = document.createElement('table');
+          for (let i = 0; i < grid.length; i++) {
+            const row = document.createElement('tr');
+  
+            // Loop through the cells in each row and create an img element for each cell
+            for (let j = 0; j < grid[i].length; j++) {
+              const cell = document.createElement('td');
+              const img = document.createElement('img');
+              img.src = grid[i][j]; // Set the src attribute of the img element to the path of the image file
+
+              const name = grid[i][j];
+
+              if (!name.includes("g1")) {
+                img.id = "group1";
+              }
+
+              
+
+              cell.appendChild(img); // Add the img element to the cell
+              row.appendChild(cell);
+            }
+  
+            // Add the row to the table
+            table.appendChild(row);
+          }
+  
+          // Add the table to the HTML document
+          const gridContainer = document.getElementsByClassName('ai2html-container')[0]; // Get the container element by class
+          gridContainer.appendChild(table); // Add the table to the container element
+        }
+  
+        // Call the createGrid function when the document loads
+        window.addEventListener('load', createGrid);
+      </script>
+
+
+    <h1 class="title" style="color: #000000;"><b>The hidden dangers of presumptive drug tests</b></h1>
+    <p class="subhead">
+      Law enforcement and correction officers use field tests to discern the presence of illicit drugs. They're not just unreliable, they're dangerous.
+    </p>
+
+    <p><i>Jake Neenan</i> | <a href="https://github.com/jakeneenan/" target="_blank"> <i class="fa fa-github fa-lg"></i></a></p>
+
+
+
+    <P>
+        When police officers at a traffic stop or prison guards in a mail room think they've found illegal drugs, they reach for one thing. A presumptive field test.
+    </P>
+
+    <p>
+      These tests take the form of small, handheld pouches that contain glass ampules of chemicals. A sample is added to the pouch and the ampules are broken to allow the reaction to take place.
+    </p>
+
+    <p>
+      They're known to be unreliable: reports regularly detail rampant false positive results.
+    </p>
+
+    <p>
+      The latest was published in Massachusetts in 2021, where a class action lawsuit is seeking to prevent the state's prison system from using the tests on incarcerated people's legal mail. 
+    </p>
+
+    <p>
+      The state continues to use them, spending just under $25,000 on tests, which cost about $2 each, from a company called Sirchie in 2023.
+    </p>
+
+    <p>
+      These tests aren't just unreliable, they're potentially dangerous. They contain harsh chemicals that can cause severe burns and be toxic if inhaled. 
+    </p>
+
+    <p>
+      "Every narcotics offer we talk to has either cut their fingers using a NIK test or knows a colleague who has," an alternative field test company spokesperson told the International Association of Chiefs of Police. NIK is another field test manufacturer whose tests are similar to Sirchie's.
+    </p>
+
+  
+
+
+
+      <section id="scrolly">
+        <div class="sticky-thing">
+          <div class="ai2html-container">
+
+<!-- ai2html goes below this line -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ai2html goes above this line -->
+
+          </div>
+        </div>
+
+        <div class="scrolly-overlay">
+          <div class="step" id="step-zero">
+            <p>These are the field tests Sirchie manufacturs and sells to states like Massachusetts.</p>
+          </div>
+          <div class="step" id="step-one">
+            <p>Three quarters of them contain high concentrations of chemicals deemed hazardous by the United Nations.</p>
+          </div>
+          <div class="step" id="step-two">
+            <p>Sample step</p>
+          </div>
+          <div class="step" id="step-three">
+            <p>Now you're at the final step and everything has been reset to the defaults.</p>
+            <p>That was fun, though, right?</p>
+          </div>
+          
+        </div>
+
+
+
+        
+
+
+
+
+
+      </section>
+
+
+
+      <!-- /* Putting some bs attempt at more scrolly lol */ -->
+
+
+
+
+
+
+
+
+
+      
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    <script>
+      
+      /* Scrollytelling code goes under here */
+
+      d3.select('#step-zero').on('stepin', function() {
+        d3.selectAll("img").classed("anti-highlight", false)
+      })
+
+      d3.select('#step-one').on('stepin', function() {
+        d3.selectAll("#group1").classed("anti-highlight", true)
+      })
+
+
+      
+    
+
+
+
+
+
+
+    </script>
+
+<script>
+    const scroller = scrollama();
+
+	scroller
+		.setup({
+			step: "#scrolly .scrolly-overlay .step",
+			offset: 0.75,
+			debug: false
+		})
+		.onStepEnter(function({ element, index, direction}) {
+			const event = new CustomEvent('stepin', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		})
+		.onStepExit(function({ element, index, direction }) {
+			const event = new CustomEvent('stepout', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		});
+
+	window.addEventListener("resize", scroller.resize);
+    </script>
+
+<script>
+  const scroller2 = scrollama();
+
+scroller2
+  .setup({
+    step: "#scrolly2 .scrolly-overlay .step",
+    offset: 0.75,
+    debug: false
+  })
+  .onStepEnter(function({ element, index, direction}) {
+    const event = new CustomEvent('stepin2', { detail: { direction: direction } })
+    element.dispatchEvent(event);
+  })
+  .onStepExit(function({ element, index, direction }) {
+    const event = new CustomEvent('stepout', { detail: { direction: direction } })
+    element.dispatchEvent(event);
+  });
+
+window.addEventListener("resize", scroller2.resize);
+  </script>
+
+
+    <!-- ai2html resizer script -->
+
+<script type="text/javascript">
+  (function() {
+      // only want one resizer on the page
+      if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+      document.documentElement.className += " g-resizer-v3-init";
+      // require IE9+
+      if (!("querySelector" in document)) return;
+      function resizer() {
+          var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+              widthById = {};
+          elements.forEach(function(el) {
+              var parent = el.parentNode,
+                  width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                  minwidth = el.getAttribute("data-min-width"),
+                  maxwidth = el.getAttribute("data-max-width");
+              widthById[parent.id] = width;
+
+              if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                  el.style.display = "block";
+              } else {
+                  el.style.display = "none";
+              }
+          });
+          try {
+              if (window.parent && window.parent.$) {
+                  window.parent.$("body").trigger("resizedcontent", [window]);
+              }
+              if (window.require) {
+                  require(['foundation/main'], function() {
+                      require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                          AppCommunicator.triggerResize();
+                      });
+                  });
+              }
+          } catch(e) { console.log(e); }
+      }
+
+      document.addEventListener('DOMContentLoaded', resizer);
+      // feel free to replace throttle with _.throttle, if available
+      window.addEventListener('resize', throttle(resizer, 200));        
+
+      function throttle(func, wait) {
+          // from underscore.js
+          var _now = Date.now || function() { return new Date().getTime(); },
+              context, args, result, timeout = null, previous = 0;
+          var later = function() {
+              previous = _now();
+              timeout = null;
+              result = func.apply(context, args);
+              if (!timeout) context = args = null;
+          };
+          return function() {
+              var now = _now(), remaining = wait - (now - previous);
+              context = this;
+              args = arguments;
+              if (remaining <= 0 || remaining > wait) {
+                  if (timeout) {
+                      clearTimeout(timeout);
+                      timeout = null;
+                  }
+                  previous = now;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              } else if (!timeout && options.trailing !== false) {
+                  timeout = setTimeout(later, remaining);
+              }
+              return result;
+          };
+      }
+
+     
+  })();
+</script>
+
+  </body>
+</html>

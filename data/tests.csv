@@ -1,0 +1,55 @@
+sku,test,chemical,cas_no,percent_of_test,ghus_us
+NARK2001,Marquis Reagent,sulfuric acid,7664-93-9,96,"H314, H350"
+NARK2001,Marquis Reagent,formaldehyde,50-00-0,4,"H301, H311, H331, H314, H317, H341, H350"
+NARK2001,Marquis Reagent,test,na,na,na
+NARK2002,Nitric Acid Reagent for Opiates & Amphetamines,nitric acid,7697-37-2,70,"H272, H314, H318"
+NARK2003,Dille-Koppanyi Reagent for Barbiturates,methanol,67-56-1,97.35,"H225, H301, H311, H331, H370"
+NARK2003,Dille-Koppanyi Reagent for Barbiturates,2-propanamine,75-31-0,2.5,"H224, H315, H319, H335"
+NARK2003,Dille-Koppanyi Reagent for Barbiturates,test,na,na,na
+NARK2004,Ehrlich's Reagent for LSD,ethanol,64-17-5,31.35,H225
+NARK2004,Ehrlich's Reagent for LSD,"phosphoric acid, solid",7664-38-2,28.9,"H302, H314"
+NARK2004,Ehrlich's Reagent for LSD,hydrochloric acid,7647-01-0,12.21,"H314, H335"
+NARK2004,Ehrlich's Reagent for LSD,4-dimethylaminobenzaldehyde,100-10-7,1.65,H302
+NARK2005,Duquenois-Levine Reagent,chloroform,67-66-3,41.58,"H302, H331, H315, H319, H351, H373"
+NARK2005,Duquenois-Levine Reagent,ethanol,64-17-5,27.55,H225
+NARK2005,Duquenois-Levine Reagent,hydrochloric acid,7647-01-0,10.73,H314
+NARK2005,Duquenois-Levine Reagent,acetaldehyde,75-07-0,0.725,"H224, H319, H351, H335"
+NARK2005,Duquenois-Levine Reagent,4-hydroxy-3-methoxybenzaldehyde,121-33-5,0.58,H319
+NARK2005,Duquenois-Levine Reagent,test,na,na,na
+NARK2007,Modified Scott Reagent,chloroform,67-66-3,41.58,"H302, H331, H315, H351, H373"
+NARK2007,Modified Scott Reagent,hydrochloric acid,7647-01-0,5.92,"H314, H335"
+NARK2007,Modified Scott Reagent,cobalt(II)thiocyanate,3017-60-5,0.42,"H302, H334, H317, H350"
+NARK2007,Modified Scott Reagent,"tartaric acid, L-(+)-",87-69-4,0.42,"H315, H319"
+NARK2007,Modified Scott Reagent,test,na,na,na
+NARK2008,Methadone Reagent,cobalt(II)thiocyanate,3017-60-5,1,"H302, H334, H317, H350"
+NARK2009,Phencyclidine (PCP) Reagent,"phosphoric acid, solid",7664-38-2,32.3,"H331, H314"
+NARK2009,Phencyclidine (PCP) Reagent,cobalt(II)thiocyanate,3017-60-5,1.24,"H302, H334, H317, H350"
+NARK2009,Phencyclidine (PCP) Reagent,test,na,na,na
+NARK20010,"Reagent for Special Opiates (Codeine, Heroin, & Morphine)",sulfuric acid,7664-93-9,95,"H314, H350"
+NARK20010,"Reagent for Special Opiates (Codeine, Heroin, & Morphine)","hexaammonium molybdate, tetrahydrate",12054-85-2,5,"H302, H351"
+NARK20011,Modified Mecke's Reagent for Heroin,sulfuric acid,7664-93-9,97.3,"H314, H350"
+NARK20012,Talwin Reagent,sulfuric acid,7664-93-9,71.568,"H314, H350"
+NARK20012,Talwin Reagent,nitric acid,7697-37-2,1.3328,"H272, H314, H318"
+NARK20013,Ephedrine Reagent,sodium hydroxide,1310-73-2,2.24,"H290, H302, H314"
+NARK20013,Ephedrine Reagent,acetic acid,64-19-7,0.72,"H226, H314"
+NARK20013,Ephedrine Reagent,copper(II)sulfate,7758-98-7,0.72,"H301, H315, H319, H400, H410"
+NARK20014,"Reagent for Valium, Rohypnol, & Metcathinone","NARK20014B Reagent for Valium, Rohypnol, & Metcathinone (Ampoule 2)",na,72,"H225, H319, H336"
+NARK20014,"Reagent for Valium, Rohypnol, & Metcathinone",methanol,67-56-1,27.16,"H225, H301, H311, H331, H370"
+NARK20014,"Reagent for Valium, Rohypnol, & Metcathinone",potassium hydroxide,1310-58-3,0.84,"H302, H314"
+NARK20015,Methamphetamine Reagent,acetaldehyde,75-07-0,5.78,"H224, H302, H319, H351, H335"
+NARK20015,Methamphetamine Reagent,"disodium pentacyanonitrosylferrate, dihydrate",13755-38-9,0.99,H301
+NARK20015,Methamphetamine Reagent,"sodium carbonate, monohydrate",5968--11-6,0.66,"H314, H319"
+NARK20019,Mayer's Reagent for Narcotic Alkaloids,mercury dichloride,7487-94-7,1.36,"H300, H310, H314, H341, H351, H361, H371"
+NARK20020,"KN Reagent for Marijuana, Hashish & THC",trichloroethylene,79-01-6,49.875,"H315, H319, H341, H350, H336"
+NARK20020,"KN Reagent for Marijuana, Hashish & THC",sodium hydroxide,1310-73-2,5,"H302, H314"
+NARK20020,"KN Reagent for Marijuana, Hashish & THC",Fast blue B salt,14263-94-6,0.125,H350
+NARK20021,GHB Reagent,aniline hydrochloride,142-04-1,1,"H301, H311, H318, H317, H341, H351, H372"
+NARK20021,GHB Reagent,methyl orange,547-58-0,1,H301
+NARK20030,Psilocybin Reagent,NARK20030B Psilocybin Reagent B,na,50,"H314, H335"
+NARK20030,Psilocybin Reagent,4-dimethylaminobenzaldehyde,100-10-7,2.5,H302
+NARK20032,"Mollies Reagent for MDMA, Ecstasy, MDPV & Amphetamines",sulfuric acid,7664-93-9,96,"H314, H350"
+NARK20032,"Mollies Reagent for MDMA, Ecstasy, MDPV & Amphetamines",formaldehyde,50-00-0,1.5,"H301, H311, H331, H314, H317, H350"
+NARK20023 ,Synthetic Cannabinoid ,sulfuric acid,7664-93-9 ,44,"H314, H350"
+NARK20023 ,Synthetic Cannabinoid ,acetonitrile,75-05-8 ,25,"H302, H312, H332, H319"
+NARK20023 ,Synthetic Cannabinoid ,dichloromethane,75-09-2 ,25,H351
+NARK20023 ,Synthetic Cannabinoid ,potassium nitrite,7758-09-0 ,5,H301

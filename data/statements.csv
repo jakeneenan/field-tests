@@ -1,0 +1,84 @@
+chemical,statement,class,code
+sulfuric acid,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+sulfuric acid,May cause cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H350
+formaldehyde,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+formaldehyde,Toxic in contact with skin,"Acute toxicity, dermal (chapter 3.1)",H311
+formaldehyde,Toxic if inhaled,"Acute toxicity, inhalation (chapter 3.1)",H331
+formaldehyde,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+formaldehyde,May cause an allergic skin reaction,"Sensitization, skin (chapter 3.4)",H317
+formaldehyde,Suspected of causing genetic defects (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Germ cell mutagenicity (chapter 3.5),H341
+formaldehyde,May cause cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H350
+nitric acid,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+nitric acid,Causes serious eye damage,Serious eye damage/eye irritation(chapter 3.3),H318
+methanol,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+methanol,Toxic in contact with skin,"Acute toxicity, dermal (chapter 3.1)",H311
+methanol,Toxic if inhaled,"Acute toxicity, inhalation (chapter 3.1)",H331
+methanol,"Causes damage to organs (or state all organs affected, if known) (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ","Specific target organ toxicity, single exposure (chapter 3.8)",H370
+2-propanamine,Causes skin irritation,Skin corrosion/irritation (chapter 3.2),H315
+2-propanamine,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+2-propanamine,May cause respiratory irritation,"Specific target organ toxicity, single exposure; Respiratory tract irritation (chapter 3.8)",H335
+"phosphoric acid, solid",Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+"phosphoric acid, solid",Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+hydrochloric acid,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+hydrochloric acid,May cause respiratory irritation,"Specific target organ toxicity, single exposure; Respiratory tract irritation (chapter 3.8)",H335
+4-dimethylaminobenzaldehyde,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+chloroform,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+chloroform,Toxic if inhaled,"Acute toxicity, inhalation (chapter 3.1)",H331
+chloroform,Causes skin irritation,Skin corrosion/irritation (chapter 3.2),H315
+chloroform,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+chloroform,Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+chloroform,"May cause damage to organs (state all organs affected, if known) through prolonged or repeated exposure (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard)","Specific target organ toxicity, repeated exposure (chapter 3.9)",H373
+acetaldehyde,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+acetaldehyde,Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+acetaldehyde,May cause respiratory irritation,"Specific target organ toxicity, single exposure; Respiratory tract irritation (chapter 3.8)",H335
+4-hydroxy-3-methoxybenzaldehyde,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+cobalt(II)thiocyanate,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+cobalt(II)thiocyanate,May cause allergy or asthma symptoms or breathing difficulties if inhaled,"Sensitization, respiratory (chapter 3.4)",H334
+cobalt(II)thiocyanate,May cause an allergic skin reaction,"Sensitization, skin (chapter 3.4)",H317
+cobalt(II)thiocyanate,May cause cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H350
+"tartaric acid, L-(+)-",Causes skin irritation,Skin corrosion/irritation (chapter 3.2),H315
+"tartaric acid, L-(+)-",Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+"hexaammonium molybdate, tetrahydrate",Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+"hexaammonium molybdate, tetrahydrate",Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+sodium hydroxide,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+sodium hydroxide,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+acetic acid,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+copper(II)sulfate,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+copper(II)sulfate,Causes skin irritation,Skin corrosion/irritation (chapter 3.2),H315
+copper(II)sulfate,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+"NARK20014B Reagent for Valium, Rohypnol, & Metcathinone (Ampoule 2)",Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+"NARK20014B Reagent for Valium, Rohypnol, & Metcathinone (Ampoule 2)",May cause drowsiness or dizziness,"Specific target organ toxicity, single exposure; Narcotic effects (chapter 3.8)",H336
+potassium hydroxide,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+potassium hydroxide,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+"disodium pentacyanonitrosylferrate, dihydrate",Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+"sodium carbonate, monohydrate",Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+"sodium carbonate, monohydrate",Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+mercury dichloride,Fatal if swallowed,"Acute toxicity, oral (chapter 3.1)",H300
+mercury dichloride,Fatal in contact with skin,"Acute toxicity, dermal (chapter 3.1)",H310
+mercury dichloride,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+mercury dichloride,Suspected of causing genetic defects (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Germ cell mutagenicity (chapter 3.5),H341
+mercury dichloride,Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+mercury dichloride,Suspected of damaging fertility or the unborn child (state specific effect if known)(state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Reproductive toxicity (chapter 3.7),H361
+mercury dichloride,"May cause damage to organs (or state all organs affected, if known)(state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ","Specific target organ toxicity, single exposure (chapter 3.8)",H371
+trichloroethylene,Causes skin irritation,Skin corrosion/irritation (chapter 3.2),H315
+trichloroethylene,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+trichloroethylene,Suspected of causing genetic defects (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Germ cell mutagenicity (chapter 3.5),H341
+trichloroethylene,May cause cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H350
+trichloroethylene,May cause drowsiness or dizziness,"Specific target organ toxicity, single exposure; Narcotic effects (chapter 3.8)",H336
+Fast blue B salt,May cause cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H350
+aniline hydrochloride,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+aniline hydrochloride,Toxic in contact with skin,"Acute toxicity, dermal (chapter 3.1)",H311
+aniline hydrochloride,Causes serious eye damage,Serious eye damage/eye irritation(chapter 3.3),H318
+aniline hydrochloride,May cause an allergic skin reaction,"Sensitization, skin (chapter 3.4)",H317
+aniline hydrochloride,Suspected of causing genetic defects (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Germ cell mutagenicity (chapter 3.5),H341
+aniline hydrochloride,Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+aniline hydrochloride,"Causes damage to organs (state all organs affected, if known) through prolonged or repeated exposure (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ","Specific target organ toxicity, repeated exposure (chapter 3.9)",H372
+methyl orange,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
+NARK20030B Psilocybin Reagent B,Causes severe skin burns and eye damage,Skin corrosion/irritation (chapter 3.2),H314
+NARK20030B Psilocybin Reagent B,May cause respiratory irritation,"Specific target organ toxicity, single exposure; Respiratory tract irritation (chapter 3.8)",H335
+acetonitrile,Harmful if swallowed,"Acute toxicity, oral (chapter 3.1)",H302
+acetonitrile,Harmful in contact with skin,"Acute toxicity, dermal (chapter 3.1)",H312
+acetonitrile,Harmful if inhaled,"Acute toxicity, inhalation (chapter 3.1)",H332
+acetonitrile,Causes serious eye irritation,Serious eye damage/eye irritation(chapter 3.3),H319
+dichloromethane,Suspected of causing cancer (state route of exposure if it is conclusively proven that no other routes of exposure cause the hazard) ,Carcinogenicity (chapter 3.6),H351
+potassium nitrite,Toxic if swallowed,"Acute toxicity, oral (chapter 3.1)",H301
