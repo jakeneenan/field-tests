@@ -14,9 +14,9 @@ Most of the tests contain chemicals in high enough concentrtions to cause severe
 
 ## Data collection
 
-Sirchie's safety data sheets are here.
+Sirchie's safety data sheets are [here](https://www.sirchie.com/safety-data-sheets).
 
-The GHS classification glossary is here.
+The GHS classification glossary is [here](http://www.ilpi.com/msds/ref/hstatements.html).
 
 ## Process and new skills
 
@@ -28,4 +28,4 @@ But the way I wanted to draw attention to different tests, by turning down the o
 
 ## Further work
 
-This works, but it could be cleaner. Adding a csv to the docs folder that contains information about the test in each image would help. That way, the various relevant properties could be checked without long and irregular file names. A more direct highlighting system would also be nice. I'm not 100% sure how to do this while keeping the reduced opacity method, but maybe a grey overlay would be easier. I'm sure this will be straightforward as I become more familiar with the language
+This works, but it could be cleaner. Adding a csv to the docs folder that contains information about the test in each image would help. That way, the various relevant properties could be checked without long and irregular file names. A more direct highlighting system would also be nice. I'm not 100% sure how to do this while keeping the reduced opacity method, but maybe a grey overlay would be easier. I'm sure this will be straightforward as I become more familiar with the language.
