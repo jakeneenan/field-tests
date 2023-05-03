@@ -142,11 +142,11 @@
         function createGrid() {
           // Create a 3x3 grid using a two-dimensional array
           const grid = [
-            ['images/nark2001-g1-g2.jpeg', 'images/nark2002-g1-g2.jpg', 'images/nark2003-g1.jpg', 'images/nark2004-g1-g2.jpg'],
-            ['images/nark2005-g1.jpg', 'images/nark2007-g1.jpg', 'images/nark2008.jpg', 'images/nark2009-g1-g2.jpg'],
-            ['images/nark20010-g1-g2.jpg', 'images/nark20011-g1-g2.jpg', 'images/nark20012-g1-g2.jpg', 'images/nark20013.jpg'],
-            ['images/nark20014-g1.jpg', 'images/nark20015.jpg', 'images/nark20019.jpg', 'images/nark20020-g1.jpg'],
-            ['images/nark20021.jpg', 'images/nark20023-g1-g2-k2.jpg', 'images/nark20030-g1-g2.jpg', 'images/nark20032-g1-g2.jpg'],
+            ['images/nark2001-g1-g2-sa.jpeg', 'images/nark2002-g1-g2.jpg', 'images/nark2003-g1-g3.jpg', 'images/nark2004-g1-g2.jpg'],
+            ['images/nark2005-g1-g3.jpg', 'images/nark2007-g1-g3.jpg', 'images/nark2008.jpg', 'images/nark2009-g1-g2-g3.jpg'],
+            ['images/nark20010-g1-g2-sa.jpg', 'images/nark20011-g1-g2-sa.jpg', 'images/nark20012-g1-g2-sa.jpg', 'images/nark20013.jpg'],
+            ['images/nark20014-g1-g3.jpg', 'images/nark20015.jpg', 'images/nark20019.jpg', 'images/nark20020-g1.jpg'],
+            ['images/nark20021.jpg', 'images/nark20023-g1-g2-spice-sa.jpg', 'images/nark20030-g1-g2.jpg', 'images/nark20032-g1-g2-sa.jpg'],
 
           ];
   
@@ -164,7 +164,22 @@
               const name = grid[i][j];
 
               if (!name.includes("g1")) {
-                img.id = "group1";
+                img.classList.add("group1");
+              }
+
+              if (!name.includes("g2")) {
+                img.classList.add("group2");
+              }
+              if (!name.includes("g3")) {
+                img.classList.add("group3");
+              }
+
+              if (!name.includes("sa")) {
+                img.classList.add("sa");
+              }
+
+              if (!name.includes("pice")) {
+                img.classList.add("k2");
               }
 
               
@@ -209,15 +224,11 @@
     </p>
 
     <p>
-      The latest was published in Massachusetts in 2021, where a class action lawsuit is seeking to prevent the state's prison system from using the tests on incarcerated people's legal mail. 
+      The latest was published in Massachusetts in 2021, where a class action lawsuit is seeking to prevent the state's prison system from using the tests, purchased from a company called Sirchie, on incarcerated people's legal mail. 
     </p>
 
     <p>
-      The state continues to use them, spending just under $25,000 on tests, which cost about $2 each, from a company called Sirchie in 2023.
-    </p>
-
-    <p>
-      These tests aren't just unreliable, they're potentially dangerous. They contain harsh chemicals that can cause severe burns and be toxic if inhaled. 
+      In addition to being unreliable, presumptive field tests are potentially dangerous. They contain harsh chemicals that can cause severe burns and be toxic if inhaled. 
     </p>
 
     <p>
@@ -272,14 +283,49 @@
           <div class="step" id="step-zero">
             <p>These are the field tests Sirchie manufacturs and sells to states like Massachusetts.</p>
           </div>
+          <div class="step" id="step-zero-1">
+            <p>They all contain chemicals deemed hazardous to humans by the United Nations.</p>
+          </div>
           <div class="step" id="step-one">
-            <p>Three quarters of them contain high concentrations of chemicals deemed hazardous by the United Nations.</p>
+            <p>Three quarters of them contain concentrations high enough for contact with them to be acutely harmful.</p>
           </div>
           <div class="step" id="step-two">
-            <p></p>
+            <p>The contents of most of those tests cause "severe skin burns and eye damage," according to the UN's classification system.</p>
           </div>
           <div class="step" id="step-three">
-            <p></p>
+            <p>
+              A quarter of the tests are classified as "toxic if inhaled."
+            </p>
+          </div>
+
+          <div class="step" id="step-four">
+            <p>
+              This test, which looks for synthetic cannabis, is at the center of the Massachusetts lawsuit.
+            </p>
+          </div>
+
+          <div class="step" id="step-five">
+            <p>
+              It's almost 50% sulfuric acid.
+            </p>
+          </div>
+
+          <div class="step" id="step-six">
+            <p>
+              Like other tests that contain the acid, it's in the "sever burns" category.
+            </p>
+          </div>
+
+          <div class="step" id="step-seven">
+            <p>
+              In December 2021, a federal judge ordered the state's prisons to stop punishing incarcerated people based on positives from Sirchie tests, calling them "marginally better than a coin flip."
+            </p>
+          </div>
+
+          <div class="step" id="step-eight">
+            <p>
+              The state continues to use other Sirchie tests, spending just under $25,000 on them, at about $2 per test, in 2023.
+            </p>
           </div>
           
         </div>
@@ -296,36 +342,6 @@
 
 
 
-      <!-- /* Putting some bs attempt at more scrolly lol */ -->
-
-
-
-
-
-
-
-
-
-      
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       
 
     <script>
@@ -337,10 +353,57 @@
       })
 
       d3.select('#step-one').on('stepin', function() {
-        d3.selectAll("#group1").classed("anti-highlight", true)
+        d3.selectAll(".group2").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", false)
+        d3.selectAll(".group1").classed("anti-highlight", true)
       })
 
+      d3.select('#step-two').on('stepin', function() {
+        d3.selectAll(".group1").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", false)
+        d3.selectAll(".group2").classed("anti-highlight", true)
+      })
 
+      
+
+      d3.select('#step-three').on('stepin', function() {
+        d3.selectAll(".group1").classed("anti-highlight", false)
+        d3.selectAll(".group2").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", true)
+      })
+
+      d3.select('#step-four').on('stepin', function() {
+        d3.selectAll(".group1").classed("anti-highlight", false)
+        d3.selectAll(".group2").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", true)
+      })
+
+      d3.select('#step-six').on('stepin', function() {
+        d3.selectAll(".group1").classed("anti-highlight", false)
+        d3.selectAll(".group2").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", true)
+      })
+
+      d3.select('#step-seven').on('stepin', function() {
+        d3.selectAll(".group1").classed("anti-highlight", false)
+        d3.selectAll(".group2").classed("anti-highlight", false)
+        d3.selectAll(".group3").classed("anti-highlight", false)
+        d3.selectAll(".sa").classed("anti-highlight", false)
+        d3.selectAll(".k2").classed("anti-highlight", true)
+        
+      })
+
+      
       
     
 
