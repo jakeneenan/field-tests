@@ -6,6 +6,8 @@ I focused on the test manufacturer Sirchie because it's the provider for the Mas
 
 The assingment this time was to stretch ourselves and do something we hadn't done technically. For me, this took the form of using javascript, a language I have only used in code snippets and templates, to create scrollytelling and to construct elements on the page.
 
+You can see the final product [here](https://jakeneenan.github.io/field-tests/).
+
 ## Findings
 
 All the field tests manufactured by Sirchie contain dangerous chemicals by the standards of the Globally Haronized System of Classification and Labelling of Chemicals (GHS). It's a standard created by the United Nations so chemicals are labeleld consistently in different countries' safety documentation.
